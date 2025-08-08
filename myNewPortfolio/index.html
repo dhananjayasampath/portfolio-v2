@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dhananjaya Sampath | Portfolio</title>
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <!-- AOS Animate On Scroll -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: rgb(2, 2, 17);
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 32px 60px 0 0;
+      gap: 40px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      margin: 0 2px;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #00e6fe;
+    }
+
+    .menu-icon {
+      font-size: 1.7rem;
+      cursor: pointer;
+      margin-left: 18px;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 10px auto 0 auto;
+      padding: 0 40px;
+    }
+
+    .aboutcontainer {
+      display: flex;
+      max-width: 1400px;
+    }
+
+    .left {
+      max-width: 600px;
+    }
+
+     .aleft {
+      max-width: 700px;
+    }
+
+
+    .left h2 {
+      font-size: 2.2rem;
+      font-weight: 400;
+      margin-bottom: 0.1rem;
+    }
+
+    .left h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #ff3c41;
+      margin: 0 0 0.1rem 0;
+      letter-spacing: 1px;
+    }
+
+    .left h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0 0 1.2rem 0;
+    }
+
+    .highlight {
+      color: #00e6fe;
+    }
+
+    .left p {
+      color: #e0e0e0;
+      font-size: 1.05rem;
+      margin-bottom: 2.2rem;
+      line-height: 1.6;
+    }
+
+    .btn-cv {
+      background: #00e6fe;
+      color: #222;
+      font-weight: 600;
+      padding: 14px 38px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      box-shadow: 0 4px 24px #00e6fe44;
+      cursor: pointer;
+      margin-right: 18px;
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .btn-cv:hover {
+      background: #fff;
+      color: #00e6fe;
+    }
+
+    .socials {
+      display: inline-flex;
+      gap: 22px;
+      margin-left: 18px;
+      vertical-align: middle;
+    }
+
+    .socials a {
+      color: #00e6fe;
+      font-size: 1.5rem;
+      background: #111;
+      border-radius: 50%;
+      padding: 10px;
+      transition: background 0.2s, color 0.2s;
+      border: 2px solid #00e6fe;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .socials a:hover {
+      background: #00e6fe;
+      color: #111;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+    .aright {
+      flex: 1;
+      display:grid;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+    }
+
+    .about-img{
+
+      width: 800px;
+      height: 700px;
+      object-fit:fill;
+      filter: contrast(1.1) saturate(1.2);
+      display: block;
+    }
+    .profile-img {
+      width: 500px;
+      height: 600px;
+      object-fit: cover;
+      filter: contrast(1.1) saturate(1.2);
+      display: block;
+    }
+
+    .right::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: linear-gradient(to top,rgb(2, 2, 17), transparent);
+      pointer-events: none;
+    }
+
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+      }
+
+      .right {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .profile-img {
+        width: 260px;
+        height: 320px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav data-aos="fade-down">
+    <a href="#">HOME</a>
+    <a href="#about">ABOUT ME</a>
+    <a href="#">PROJECTS</a>
+    <a href="#">CONTACT</a>
+    <span class="menu-icon"><i class="fas fa-bars"></i></span>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="left" data-aos="fade-right" data-aos-duration="1000">
+      <h2>Hello, It’s me</h2>
+      <h1>Dhananjaya Sampath</h1>
+      <h3>I’m a <span class="highlight">Full-Stack Developer</span></h3>
+      <p>
+        Turning ideas into fast, functional, and beautiful digital products — from elegant frontends to efficient server-side logic, with a focus on clean code, performance, and user experience.
+      </p>
+      <button class="btn-cv" data-aos="zoom-in" data-aos-delay="300">Download CV</button>
+      <span class="socials" data-aos="fade-up" data-aos-delay="500">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fas fa-envelope"></i></a>
+      </span>
+    </div>
+
+    <div class="right" data-aos="fade-left" data-aos-duration="1000">
+      <img src="miimg.png" alt="Profile photo of Dhananjaya Sampath" class="profile-img"/>
+    </div>
+  </div>
+<!--About Page -->
+    <div class="aboutcontainer" id="about">
+    <div class="aleft" data-aos="fade-right" data-aos-duration="1000">
+      <img src="aboutp.png" alt="Photo for About Page" class="about-img"/>
+    </div>
+    <div class="aright" data-aos="fade-left" data-aos-duration="1000">
+      <h1 style="padding-top: 50px; color: #00e6fe; font-size: 3rem; margin-bottom: 0.5rem;">About me</h1>
+      <p style="color: #fff; font-size: 1.rem; line-height: 1.7;">
+      A <span style="color:#00e6fe;">full-stack developer</span> with a strong foundation in web and software development, I'm passionate about crafting complete digital solutions from responsive user interfaces to secure server-side logic. I enjoy transforming complex ideas into functional, scalable applications that are both user friendly and performance-driven.<br/><br/>
+      My work is guided by a love for technology, problem solving, and continuous learning. I aim to build digital products that don’t just work but truly make an impact through thoughtful design, clean architecture, and reliable performance.<br/><br/>
+      Beyond my personal growth, I'm deeply committed to supporting the IT community, especially students. One of my core goals is to help all IT students by sharing knowledge, offering guidance, and creating space for learning and collaboration. I believe that progress in tech should be inclusive, supportive, and shared.<br/><br/>
+      Whether I’m developing full-stack applications, collaborating on innovative projects, or helping someone grasp a new concept, I bring focus, curiosity, and a dedication to constant improvement.
+    </p>
+    </div>
+
+
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+    });
+  </script>
+
+
+</body>
+</html>
