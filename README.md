@@ -50,7 +50,8 @@ I believe progress in tech should be **inclusive, supportive, and shared**.
 ---
 
 ## 📬 Contact
-💼 https://www.linkedin.com/in/dhananjayasampath/  |  🐙 https://github.com/DhananjayaSampath  |  📧 sasikadhananjaya433@gmail.com  
+💼 https://www.linkedin.com/in/dhananjayasampath/  |  🐙 https://github.com/DhananjayaSampath  |  
+📧 sasikadhananjaya433@gmail.com  
 
 ---
 
